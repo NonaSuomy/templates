@@ -11,7 +11,16 @@ flash: serial
 category: bulb
 type: RGBCCT
 standard: e26
+unsupported: true
 ---
+
+## Warning! Since 2023-09-26 ships with ESP32-C3 with set efuses to a locked boot loader and encrypted flash. There is currently no way to break these without expensive glitching gear. 
+
+https://eprint.iacr.org/2023/090.pdf 
+https://www.youtube.com/watch?v=wfZHQocTsZo
+
+## Old hardware instructions
+
 Serial flashed - doesn't run Tuya. (Do not connect to mains while flashing.) 
 
-Plastic dome is glued but comes off easily. The LED board must be levered out, which is difficult - dont bother squeezing the bulb in a vice that doesn't help. In order to access tight space around the ESP-WROOM-02 two capacitors must be removed and resoldered after flashing. 
+The plastic dome is glued but comes off easily. The LED board must be levered out, which is difficult - don't bother squeezing the bulb in a vice that doesn't help. In order to access tight space around the ESP-WROOM-02 two capacitors must be removed and resoldered after flashing. 
